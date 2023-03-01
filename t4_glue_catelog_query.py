@@ -20,8 +20,8 @@ Athena_output = f"s3://{Athena_result}/
 
 query = """SELECT *
             FROM song_db.song
-            WHERE catgroup = 'Shows' AND catname = 'Opera'
-            ORDER BY saletime
+            WHERE artist = '???'
+            ORDER BY realease_time
             LIMIT 10;"""
 
 DEFAULT_ARGS = {
