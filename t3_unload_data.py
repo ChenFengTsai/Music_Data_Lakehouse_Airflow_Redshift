@@ -30,7 +30,7 @@ dag = DAG(
     schedule_interval=None,
     tags=["spotify table"],)
 
-unload_sales_data = PostgresOperator(
+unload_data = PostgresOperator(
     task_id="unload_data",
     sql="sql/unload.sql",
     params={
