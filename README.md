@@ -6,3 +6,4 @@
 * Integrated with slack notification function in airflow to gave failure notification when pipeline failed
 
 ### Tools: Python, SQL, Airflow, Redshift, Athena, Glue S3
+![alt text](./img.png)
