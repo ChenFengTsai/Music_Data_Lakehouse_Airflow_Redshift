@@ -10,7 +10,7 @@ Python, SQL, Airflow, Redshift, Athena, Glue S3
 
 ![alt text](https://github.com/ChenFengTsai/Music_Data_Lakehouse_Airflow_Redshift/blob/337ad63f07f44ce8a7ca12290714ef079b413ed1/Data_lakehouse_Architecture.png)
 
-For this section, I would implement a data lakehouse solution in AWS with airflow for Spotify data analytics workloads. We are using MWAA here, which is the AWS version of airflow and it is more convenient to manage with other modules.
+For this section, I would implement a data lakehouse solution in AWS with airflow for Spotify data analytics workloads. We are using MWAA here, which is the AWS version of airflow and it is more convenient to manage with other modules. A more comprehensive walk through is on my [Medium](https://medium.com/@rich.tsai1103/data-lakehouse-with-airflow-for-spotify-analytics-workloads-67ac42f33adb)
 
 ## Pre-requirements :
 * Save all the finalized dags, sql query, and airflow configuration in one S3 bucket
