@@ -1,6 +1,6 @@
 import os
 from datetime import timedelta
-
+import datetime
 from airflow import DAG
 from airflow.models import Variable
 from airflow.operators.bash import BashOperator
@@ -20,8 +20,8 @@ Athena_output = f"s3://{Athena_result}/
 
 query = """SELECT *
             FROM song_db.song
-            WHERE artist = '???'
-            ORDER BY realease_time
+            WHERE catgroup = 'Shows' AND catname = 'Opera'
+            ORDER BY saletime
             LIMIT 10;"""
 
 DEFAULT_ARGS = {

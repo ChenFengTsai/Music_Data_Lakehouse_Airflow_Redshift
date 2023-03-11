@@ -1,6 +1,6 @@
 import os
 from datetime import timedelta
-
+import datetime
 from airflow import DAG
 from airflow.models import Variable
 from airflow.providers.postgres.operators.postgres import PostgresOperator
@@ -30,7 +30,7 @@ dag = DAG(
     schedule_interval=None,
     tags=["spotify table"],)
 
-unload_data = PostgresOperator(
+unload_sales_data = PostgresOperator(
     task_id="unload_data",
     sql="sql/unload.sql",
     params={
